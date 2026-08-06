@@ -1,12 +1,13 @@
 [project]
 name = "agentic-qa-engineer"
 version = "0.1.0"
-description = "Add your description here"
+description = "Enterprise level tool to help QA engineer with test case generation"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "pydantic>=2.13.4",
     "pydantic-settings>=2.14.2",
+    "pymupdf>=1.28.0",
 ]
 
 [project.scripts]
