@@ -91,6 +91,4 @@ class DocumentLoader:
         if suffix == ".pdf":
             return self._pdf_loader.load(file_path)
 
-        raise ValueError(
-            f"Unsupported document type: {suffix}"
-        )
+        raise ValueError(f"Unsupported document type: {suffix}")

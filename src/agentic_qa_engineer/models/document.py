@@ -35,7 +35,6 @@ Retrieval
 """
 
 from pathlib import Path
-from typing import Optional
 
 from pydantic import BaseModel, ConfigDict
 
@@ -83,6 +82,4 @@ class Document(BaseModel):
 
     metadata: dict[str, str] = {}
 
-    model_config = ConfigDict(
-        arbitrary_types_allowed=True
-    )
+    model_config = ConfigDict(arbitrary_types_allowed=True)
